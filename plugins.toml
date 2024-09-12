@@ -1,0 +1,37 @@
+[velox]
+
+[roadrunner]
+ref = "v2024.1.5"
+
+[github]
+    [github.token]
+    token = "${GH_REPOS_TOKEN}"
+
+    [github.plugins]
+    # ref -> master, commit or tag
+
+    tcp = { ref = "v4.5.0", owner = "roadrunner-server", repository = "tcp" }
+    rpc = { ref = "v4.4.0", owner = "roadrunner-server", repository = "rpc" }
+    server = { ref = "v4.8.0", owner = "roadrunner-server", repository = "server" }
+    status = { ref = "v4.6.0", owner = "roadrunner-server", repository = "status" }
+    http = { ref = "v4.7.0", owner = "roadrunner-server", repository = "http" }
+    logger = { ref = "v4.4.0", owner = "roadrunner-server", repository = "logger" }
+    jobs = { ref = "v4.9.0", owner = "roadrunner-server", repository = "jobs" }
+    memory = { ref = "v4.8.0", owner = "roadrunner-server", repository = "memory" }
+    static = { ref = "v4.3.0", owner = "roadrunner-server", repository = "static" }
+    headers = { ref = "v4.4.0", owner = "roadrunner-server", repository = "headers" }
+    gzip = { ref = "v4.3.0", owner = "roadrunner-server", repository = "gzip" }
+    otel = { ref = "v4.5.0", owner = "roadrunner-server", repository = "otel" }
+
+    ##demo plugins
+    roadrunner_demo_middleware = { ref = "main", owner="dmccarthy-dev", repository = "roadrunner-demo-middleware"}
+    roadrunner_demo_plugin = { ref = "main", owner="dmccarthy-dev", repository = "roadrunner-demo-plugin"}
+    roadrunner_demo_plugin_with_rpc = { ref = "main", owner="dmccarthy-dev", repository = "roadrunner-demo-plugin-with-rpc"}
+    roadrunner_demo_fiber = { ref = "main", owner="dmccarthy-dev", repository = "roadrunner-demo-fiber"}
+
+[log]
+#level = "info"
+#mode = "production"
+#dev mode
+level = "debug"
+mode = "development"

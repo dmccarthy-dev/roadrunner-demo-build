@@ -9,7 +9,7 @@ Roadrunner Template
 
 ## Setup
 
-Add GitHub token to path
+Export GitHub token:
 ```bash
 export GH_REPOS_TOKEN=""
 ```
